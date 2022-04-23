@@ -1,8 +1,8 @@
-package com.example.teamToDoList.Repositories;
+package com.examble.teamToDoList.Repositories;
 
 
 import com.example.teamToDoList.models.ToDoListItems;
-import com.example.teamToDoList.models.Users;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
