@@ -1,5 +1,5 @@
 
-package com.examble.teamToDoList.secuirty;
+package com.example.teamToDoList.models;
 
 
 import lombok.*;
