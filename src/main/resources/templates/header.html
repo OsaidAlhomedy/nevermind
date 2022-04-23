@@ -1,0 +1,24 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+        <header class="header" th:fragment="my-fragment2">
+
+                <link th:href="@{/css/header.css}" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+                <a href="/dashboard" class="logo">
+                    <img th:src="@{/image/logo.png}" alt="">
+                </a>
+                <nav class="navbar">
+                    <a href="/dashboard">Dashboard</a>
+                    <a href="/taskslist">Tasks</a>
+                    <a href="/myTask">Groups</a>
+                    <a href="/profile" id="Profile">Profile</a>
+                        <a href="/notifications" class="notification" >
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="badge" id="numberOfNotificatinos"></span>
+                        </a>
+                    <form class="logout-form" action="/logout" method="post" style="display: inline-block;">
+                        <button type="submit" style="background-color: #645c50;"> <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    </form>
+                </nav>
+            <script th:src="@{/header.js}">  </script>
+        </header>
+</html>
